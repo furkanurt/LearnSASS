@@ -7,7 +7,7 @@
     padding: 15px;
     padding-right: 220px;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     margin: 0%;
     width: 100%;
     transition: background-color 0.4s ease-in-out;
@@ -34,10 +34,11 @@
 
     }
     &-h1{
-        font-size: 38Spx;
+        font-size: 38px;
         letter-spacing:normal;
         padding-right: 230px;
-        padding-left: 30px;
+        padding-left: 25px;
+        margin: 0;
         color: $colorone;
     }
 }

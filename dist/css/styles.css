@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Archivo Black", sans-serif; }
 
+body {
+  background-color: black; }
+
 .home-set-height {
   position: relative;
   height: 60px;
@@ -27,7 +30,8 @@
   .home-slider-textOne {
     font-size: 110px;
     color: white;
-    padding: 10px; }
+    padding-top: 150px;
+    padding-right: 50px; }
   .home-slider-container-1, .home-slider-container-2, .home-slider-container-3 {
     scroll-snap-align: start;
     display: flex;
@@ -35,16 +39,16 @@
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
+    background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
     width: 100%;
     height: 100%;
     background-size: cover; }
     .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne {
-      font-size: 900px; }
+      font-size: 90px; }
   .home-slider-container-2 {
-    background-image: url("https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg"); }
+    background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url("https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg"); }
   .home-slider-container-3 {
-    background-image: url("https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png"); }
+    background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url("https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png"); }
 
 @media only screen and (max-width: 800px) {
   .home {
@@ -60,7 +64,7 @@
   padding: 15px;
   padding-right: 220px;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   margin: 0%;
   width: 100%;
   transition: background-color 0.4s ease-in-out; }
@@ -87,3 +91,41 @@
 
 .nav.scrolled {
   background-color: black; }
+
+.artists {
+  color: white; }
+  .artists-textone {
+    font-size: 90px; }
+
+.grid-template {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 0; }
+  .grid-template-box {
+    background-color: gray;
+    height: 350px;
+    display: flex;
+    align-items: end;
+    overflow: hidden; }
+    .grid-template-box-img {
+      object-fit: cover;
+      display: flex;
+      top: 0;
+      z-index: 1; }
+    .grid-template-box-textOne {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      padding: 1rem;
+      font-size: 40px; }
+    .grid-template-box-shadow {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      object-fit: cover; }
+    .grid-template-box-shadow:hover {
+      display: block;
+      background-color: rgba(0, 128, 0, 0.5);
+      z-index: 3; }
