@@ -1,23 +1,65 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    justify-content: center;
+    &-set-height {
+      position: relative;
+      height: 60px;
+      width: 10px;
+      top: 0;
+    }
+  
+    &-wrapper {
+      position: relative;
+      margin: auto 0;
+      max-height: 700px;
+      overflow:hidden;
+      scroll-behavior: smooth;
+    }
+  
+    &-slider {
+      display: flex;
+      flex-direction: column;
+      aspect-ratio: 9 / 16;
+      overflow-y: auto;
+      height: 100%;
+      scroll-snap-type: y mandatory;
 
-    &-container {
+
+      &-textOne {
+        font-size: $xlargefont;
+        color: $colorone;
+        padding: 10px;
+
+      }
+      
+  
+      &-container-1, &-container-2 ,&-container-3 {
+        scroll-snap-align: start;
         display: flex;
-        align-items: center;
+        align-items: last baseline;
         justify-content: center;
         flex-direction: column;
-
+        background-size: cover;
+        background-image: url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+  
         &-textOne {
-            font-size: $largefont;
+          font-size: $largefont;
         }
+      }
+       &-container-2 {
+        background-image: url('https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg');
+        }
+      
 
+       &-container-3 {
+        background-image: url('https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png');
+    
+      }
     }
+  
     @include tablet {
-        color: $colorone;
-        color: black;
+      color: $colorone;
+      color: black;
     }
-}
+  }

@@ -1,0 +1,48 @@
+.nav {
+    background: transparent;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    padding-right: 220px;
+    top: 0;
+    z-index: 1;
+    margin: 0%;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out;
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+     &-link {
+        color: $coloryellow;
+        text-decoration: none;
+        padding: 16px;
+        font-size: $navlink;
+        transition:color 0.4s ease-in-out;
+     }
+
+     &-link:hover {
+        color: $colorone;
+     }
+     
+
+    }
+    &-h1{
+        font-size: 38Spx;
+        letter-spacing:normal;
+        padding-right: 230px;
+        padding-left: 30px;
+        color: $colorone;
+    }
+}
+
+.nav.scrolled {
+    background-color: black;
+}
+

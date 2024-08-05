@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/dist/css/styles.css">
-        
-    </head>
-    <body>
-     <div class="home">
-        <div class="home-container">
-            <p class="home-container-textOne">
-                SASS
-            </p>
-            <p class="home-container-textTwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur dolorum iste laboriosam earum consectetur molestiae obcaecati ab nisi beatae possimus illum architecto quibusdam facilis, et sed autem! Dolor, nobis.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/dist/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav" id="nav">
+    <h1 class="nav-h1">republic records</h1>
+    <ul class="nav-links">
+      <li><a class="nav-links-link" href="#container-2">artist</a></li>
+      <li><a class="nav-links-link" href="#">videos</a></li>
+      <li><a class="nav-links-link" href="#">shop</a></li>
+      <li><a class="nav-links-link" href="#">subscribe</a></li>
+      <li><a class="nav-links-link" href="#">action commite</a></li>
+    </ul>
+  </div>
+  <div class="home">
+    <div class="home-wrapper">
+      <div class="home-slider">
+        <div class="home-slider-container-1">
+          <div class="home-set-height" id="set-height"></div>
+          <h1 class="home-slider-textOne">the warning</h1>
+          <p class="home-slider-container-1-textTwo"></p>
+          <button class="black-button">listen now</button>
         </div>
-     </div>
-    </body>
+        <div class="home-slider-container-2" id="container-2">
+          <div class="home-set-height" id="set-height"></div>
+          <h1 class="home-slider-textOne">taylor swift</h1>
+          <p class="home-slider-container-2-textTwo"></p>
+          <button class="black-button">listen now</button>
+        </div>
+        <div class="home-slider-container-3">
+          <div class="home-set-height" id="set-height"></div>
+          <h1 class="home-slider-textOne"> post malone</h1>
+          <p class="home-slider-container-3-textTwo"></p>
+          <button class="black-button">listen now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="artists">
+    <h1 class="artists-textone">artists</h1>
+    <div class="grid-template">
+      <div class="gridtemplate-box" id="grid-template-box">
+        <h2 class="grid-template-box-textOne">taylor swift</h2>
+        <img class="grid-template-box-img" src="">
+        <div class="grid-template-boxshadow"></div>
+      </div>
+    </div>
+  </section>
+  <div style="height: 899px;"></div>
+</body>
+<script src="./script.js"></script>
 </html>
