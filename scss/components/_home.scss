@@ -17,22 +17,41 @@
     &-slider {
       display: flex;
       flex-direction: column;
-      aspect-ratio: 9 / 16;
+      aspect-ratio: 8 / 16;
       overflow-y: auto;
       height: 100%;
       scroll-snap-type: y mandatory;
-      
-      
+       
 
       &-navs {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
+        width: 50%;
 
         &-ul {
+          width: 20%;
           display: flex;
           flex-direction: row;
           list-style: none;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding-left: 10px;
+
+
+        &-li {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $colorone;
+          border-radius: 100%;
+          transition: 0.4s ease-in-out;
+        }
+        &-li:hover {
+          background-color: $colorone;
+          opacity: 0.9;
+        }
           
         }
       }
@@ -40,39 +59,44 @@
       &-textOne {
         font-size: $xlargefont;
         color: $colorone;
-        padding-top: 150px;
-        padding-right: 50px;
+        padding-top: 275px;
+        padding-right: 40px;
+        z-index: 4;
 
       }
       
   
-      &-container-1, &-container-2 ,&-container-3 {
+      &-container-1, &-container-2 ,&-container-3, &-container-4 {
         scroll-snap-align: start;
         display: flex;
         align-items: last baseline;
         justify-content: center;
         flex-direction: column;
+        object-fit: cover;
         background-size: cover;
-        background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)),url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
+        overflow: hidden;
   
         &-textOne {
           font-size: $largefont;
         }
       }
+      &-container-1 {
+        background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
+      }
        &-container-2 {
-        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url('https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg');
+        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg');
         }
       
 
        &-container-3 {
-        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url('https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png');
+        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png');
     
       }
       &-container-4 {
-        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.8), rgba(58, 58, 63, 0.2)), url('https://www.republicrecords.com/files/2023/08/AG-916-Banner.jpg');
+        background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2023/08/AG-Banner-169.jpg');
       }
     }
   
@@ -81,3 +105,5 @@
       color: black;
     }
   }
+
+  

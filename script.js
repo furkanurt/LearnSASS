@@ -21,3 +21,4 @@ document.addEventListener('scroll',() => {
         grid.classList.remove('scrolled');
     }
 })
+
