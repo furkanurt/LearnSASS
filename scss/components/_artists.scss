@@ -1,8 +1,31 @@
 .artists {
     color: $colorone;
+    width: 100%;
 
+ &-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 
- &-textone {
-    font-size: $largefont;
+    &-textone {
+     font-size: $xxlargefont;
+     bottom: 0;
+     position: relative;
+     top: 50px;
+     z-index: 4;
+
+     }   
+
  }
+
+ &-bottom {
+
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content:center ;
+   padding: 2rem;
+ }
+
 }

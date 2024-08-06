@@ -1,0 +1,15 @@
+.aı {
+ animation: animate 0.4s ease-in-out ;
+
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(60px);
+        opacity: 40%;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
