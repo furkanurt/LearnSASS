@@ -1,24 +1,39 @@
-document.addEventListener('scroll', ()=> {
+document.addEventListener('scroll', () => {
     const nav = document.getElementById("nav");
     const aside = document.getElementById('set-height');
+    const gridBoxes = document.querySelectorAll('.grid-template-box');
+    const gridBoxes2 = document.querySelectorAll('.grid-template-box-2');
+    const gridBoxes3 = document.querySelectorAll('.grid-template-box-3');
 
     if (window.scrollY > aside.offsetHeight) {
         nav.classList.add('scrolled');
-    }
-    else {
+    } else {
         nav.classList.remove('scrolled');
     }
-})
 
-document.addEventListener('scroll',() => {
-    const grid = document.getElementById("grid-template-box");
-    const gridpass = document.getElementById("grid-template-box");
+    gridBoxes.forEach(gridBox => {
+        if (window.scrollY > aside.offsetHeight) {
+            gridBox.classList.add('scrolled1');
+        } else {
+            gridBox.classList.remove('scrolled1');
+        }
+    });
 
-    if (window.scrollY >  gridpass.offsetHeight) {
-        grid.classList.add('scrolled');
-    }
-    else {
-        grid.classList.remove('scrolled');
-    }
-})
+    gridBoxes2.forEach(gridBox => {
+        if (window.scrollY > aside.offsetHeight) {
+            gridBox.classList.add('scrolled2');
+        } else {
+            gridBox.classList.remove('scrolled2');
+        }
+    });
 
+    gridBoxes3.forEach(gridBox => {
+        if (window.scrollY > aside.offsetHeight) {
+            gridBox.classList.add('scrolled3');
+        } else {
+            gridBox.classList.remove('scrolled3');
+        }
+    });
+
+    
+});

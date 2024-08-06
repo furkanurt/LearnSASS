@@ -1,58 +1,105 @@
 .grid-template {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap:0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap:0;
 
+  &-box , &-box-2, &-box-3{
+      height: 350px;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
 
-
-
- &-box {
-    background-color: gray;
-    height: 350px;
-    display: flex;
-    align-items: end;
-    overflow: hidden;
-
-
-    &-img {
-        object-fit: cover;
-        display: flex;
-        top: 0;
-        
-        z-index: 1;
-    }
-
-    &-textOne {
-        position: absolute;
-        z-index: 2;
-        color: white;
-        padding: 1rem; 
-        font-size: $mediumfont;
+      &-imag {
+          object-fit: cover;
+          position: static;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          object-fit: cover;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
       }
 
-    
+      &-textOne {
+          position: absolute;
+          z-index: 2;
+          color: white;
+          padding: 1rem; 
+          font-size: $mediumfont;
+          text-shadow: 2px 5px 5px rgba(86, 85, 85, 0.4);
+      }
+
       &-shadow {
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index:1 ;
-        object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 3 ;
+          object-fit: cover;
+          transition: 0.2s ease-in-out all;
+          opacity: 0;
       }
      
       &-shadow:hover {
-
-        display: block; 
-        background-color: rgba(0, 128, 0, 0.5);
-        z-index: 3;
+          opacity: 1;
+          display: block; 
+          color: white;
+          background-color: rgba(10, 14, 10, 0.5);
       }
+  }
 
- }
+  .scrolled1 {
+      animation-name: scroll ;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+  }
 
-
- &-box.scrolled1 {
-  background-color: black;
+  @keyframes scroll {
+      0% {
+          transform: translateY(100px);
+          opacity: 40%;
+      }
+      100% {
+          transform: translateY(0px);
+      }
+  }
 }
 
+.scrolled2 {
+  animation-name: scroll2 ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes scroll2 {
+  0% {
+      transform: translateY(200px);
+      opacity: 40%;
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.scrolled3 {
+  animation-name: scroll3 ;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll3 {
+  0% {
+      transform: translateY(220px);
+      opacity: 40%;
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
 

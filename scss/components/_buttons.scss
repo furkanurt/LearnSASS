@@ -1,0 +1,44 @@
+.black-button {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 130px;
+height: 30px;
+top: 0;
+left: 0;
+background-color: $colortwo;
+color: $coloryellow;
+border: 2px solid $coloryellow;
+border-radius: 50px;
+margin-left: 19px;
+transition: 0.2s ease-in-out all;
+z-index: unset;
+
+}
+
+.black-button:hover {
+    top: 3px;
+    left: 12px;
+
+
+    &::after {
+        top: 0;
+        left: 0;
+    }
+}
+
+.black-button::after {
+    content: "";
+    position: absolute;
+    background-color: $colortwo;
+    color: $coloryellow;
+    border: 2px solid $coloryellow;
+    border-radius: 50px;
+    width: 130px ;
+    height: 30px;
+    transition: 0.3s ease-in-out all;
+    z-index: -1;
+    top: 3px;
+    left: 7px;
+}
