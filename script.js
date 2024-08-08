@@ -1,7 +1,9 @@
-document.addEventListener('scroll', () => {
+     document.addEventListener('scroll', () => {
     const nav = document.getElementById("nav");
     const aside = document.getElementById('set-height');
     const artheader = document.getElementById('artisth1');
+    const footer = document.getElementById("footer");
+    const shop = document.getElementById ("shop");
     const gridBoxes = document.querySelectorAll('.grid-template-box');
     const gridBoxes2 = document.querySelectorAll('.grid-template-box-2');
     const gridBoxes3 = document.querySelectorAll('.grid-template-box-3');
@@ -16,6 +18,11 @@ document.addEventListener('scroll', () => {
         artheader.classList.add('aı');
     } else {
         artheader.classList.remove('aı');
+    }
+    if (window.scrollY > shop.offsetTop + shop.offsetHeight) {
+        footer.classList.add('shopscroll');
+    } else {
+        footer.classList.remove('shopscroll');
     }
 
     gridBoxes.forEach(gridBox => {

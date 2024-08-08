@@ -1,13 +1,13 @@
 .aı {
- animation: animate 0.4s ease-in-out ;
+ animation: animate 1s ease-in-out ;
 
 }
 
 
 @keyframes animate {
     0% {
-        transform: translateY(60px);
-        opacity: 40%;
+        transform: translateY(150px);
+        opacity: 30%;
     }
     100% {
         transform: translateY(0px);
