@@ -8,6 +8,17 @@
 body {
   background-color: black; }
 
+a {
+  color: #fedb62;
+  text-decoration: none;
+  transition: 0.3s ease-in-out; }
+
+a:hover {
+  color: white; }
+
+ul {
+  list-style: none; }
+
 .home-set-height {
   position: relative;
   height: 100px;
@@ -249,6 +260,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
   width: 140px;
   height: 40px;
   top: 0;
@@ -321,6 +333,45 @@ body {
   top: 3px;
   left: 7px; }
 
+.yellow-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: #fedb62;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-left: 19px;
+  transition: 0.2s ease-in-out all;
+  z-index: unset; }
+
+.yellow-button:hover {
+  top: 3px;
+  left: 12px; }
+  .yellow-button:hover::after {
+    top: 0;
+    left: 0; }
+
+.yellow-button::after {
+  content: "";
+  position: absolute;
+  background-color: #fedb62;
+  color: #fedb62;
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 140px;
+  height: 40px;
+  transition: 0.3s ease-in-out all;
+  z-index: -1;
+  top: 3px;
+  left: 7px; }
+
 .aı {
   animation: animate 0.4s ease-in-out; }
 
@@ -339,7 +390,7 @@ body {
   align-items: center;
   justify-content: space-between; }
   .icon-div > h1 {
-    font-size: 20px; }
+    font-size: 25px; }
   .icon-div-box {
     font-size: x-large; }
     .icon-div-box-icons:hover {
@@ -392,9 +443,9 @@ body {
         padding: 20px;
         z-index: 2; }
         .shop-area-pic-text > h1 {
-          font-size: 20px; }
-        .shop-area-pic-text > h2 {
           font-size: 25px; }
+        .shop-area-pic-text > h2 {
+          font-size: 18px; }
     .shop-area-left {
       width: 50%;
       height: 100%;
@@ -464,10 +515,9 @@ body {
       align-items: center;
       justify-content: center; }
     .footer-area-main {
-      margin-top: 20px;
+      margin-top: 90px;
       width: 100%;
       height: 520px;
-      border: 2px solid red;
       z-index: 4;
       display: flex;
       position: relative; }
@@ -475,29 +525,97 @@ body {
         position: absolute;
         width: 85%;
         right: 0%;
-        border: 1px solid grey;
         height: 100%;
         display: flex;
         flex-direction: row; }
         .footer-area-main-right-form {
-          width: 65%;
+          width: 70%;
           height: 100%;
           padding: 10px;
           display: flex;
           flex-direction: column;
-          border: 1px solid yellow; }
+          color: white; }
+          .footer-area-main-right-form > h1 {
+            font-size: 40px;
+            width: 90%;
+            letter-spacing: normal;
+            padding-top: 10px; }
+          .footer-area-main-right-form-box {
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+            padding-bottom: 20px; }
+            .footer-area-main-right-form-box-right, .footer-area-main-right-form-box-left {
+              padding-right: 20px; }
+              .footer-area-main-right-form-box-right > label, .footer-area-main-right-form-box-left > label {
+                font-size: 25px;
+                color: #fedb62; }
+              .footer-area-main-right-form-box-right > input, .footer-area-main-right-form-box-left > input {
+                width: 300px;
+                height: 40px;
+                background: transparent;
+                border: 1px solid #fedb62;
+                border-radius: 5px;
+                padding: 5px;
+                position: relative; }
+                .footer-area-main-right-form-box-right > input::after, .footer-area-main-right-form-box-left > input::after {
+                  content: '';
+                  position: absolute;
+                  background: #fedb62;
+                  height: 4px;
+                  width: 100%;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 4; }
+          .footer-area-main-right-form-ckbx {
+            padding-top: 15px;
+            width: 170px;
+            justify-content: space-between;
+            color: #fedb62;
+            display: flex;
+            flex-direction: row; }
+            .footer-area-main-right-form-ckbx-checkbox {
+              padding-top: 10px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              width: 20px;
+              height: 20px;
+              background-color: transparent;
+              border: 3px solid #fedb62;
+              border-radius: 3px;
+              color: white;
+              cursor: pointer; }
+              .footer-area-main-right-form-ckbx-checkbox:checked {
+                background-color: #fedb62;
+                color: white; }
+          .footer-area-main-right-form > p {
+            padding-top: 15px;
+            padding-bottom: 40px;
+            width: 90%; }
         .footer-area-main-right-2 {
-          width: 30%;
+          width: 20%;
           padding: 10px;
+          padding-top: 30px;
           height: 100%;
           display: flex;
-          flex-direction: column;
-          border: 1px solid blue; }
-    .footer-area-logos {
-      position: relative;
-      display: flex;
-      height: 120px;
-      margin-bottom: 10px;
-      width: 100%;
-      border: 2px solid green;
-      z-index: 4; }
+          flex-direction: column; }
+          .footer-area-main-right-2-list {
+            padding: 20px;
+            font-size: 18px; }
+            .footer-area-main-right-2-list-white {
+              color: white;
+              font-size: 15px;
+              font-family: Arial, Helvetica, sans-serif;
+              transition: 0.4s ease-in-out;
+              padding-bottom: 10px; }
+              .footer-area-main-right-2-list-white:hover {
+                color: #fedb62; }
+          .footer-area-main-right-2-span {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: 80%;
+            height: 0.7px;
+            background-color: white;
+            border-radius: 5px solid;
+            z-index: 4; }

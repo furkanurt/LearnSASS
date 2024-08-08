@@ -3,6 +3,7 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
+font-size: $msssfont;
 width: 140px;
 height: 40px;
 top: 0;
@@ -88,3 +89,49 @@ z-index: unset;
         top: 3px;
         left: 7px;
     }
+
+    .yellow-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $msssfont;
+        width: 140px;
+        height: 40px;
+        top: 0;
+        left: 0;
+        background-color: $coloryellow;
+        color: $colortwo;
+        border: 3px solid $colortwo;
+        border-radius: 50px;
+        margin-left: 19px;
+        transition: 0.2s ease-in-out all;
+        z-index: unset;
+        
+        }
+        
+        .yellow-button:hover {
+            top: 3px;
+            left: 12px;
+        
+        
+            &::after {
+                top: 0;
+                left: 0;
+            }
+        }
+        
+        .yellow-button::after {
+            content: "";
+            position: absolute;
+            background-color: $coloryellow;
+            color: $coloryellow;
+            border: 3px solid $colortwo;
+            border-radius: 50px;
+            width: 140px ;
+            height: 40px;
+            transition: 0.3s ease-in-out all;
+            z-index: -1;
+            top: 3px;
+            left: 7px;
+        }
