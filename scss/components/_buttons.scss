@@ -3,8 +3,8 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 130px;
-height: 30px;
+width: 140px;
+height: 40px;
 top: 0;
 left: 0;
 background-color: $colortwo;
@@ -35,10 +35,56 @@ z-index: unset;
     color: $coloryellow;
     border: 2px solid $coloryellow;
     border-radius: 50px;
-    width: 130px ;
-    height: 30px;
+    width: 140px ;
+    height: 40px;
     transition: 0.3s ease-in-out all;
     z-index: -1;
     top: 3px;
     left: 7px;
 }
+
+.big-black-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $msfont;
+    width: 170px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: $colortwo;
+    color: $coloryellow;
+    border: 2px solid $coloryellow;
+    border-radius: 50px;
+    margin-left: 19px;
+    transition: 0.2s ease-in-out all;
+    z-index: unset;
+    
+    }
+    
+    .big-black-button:hover {
+        top: 3px;
+        left: 12px;
+    
+    
+        &::after {
+            top: 0;
+            left: 0;
+        }
+    }
+    
+    .big-black-button::after {
+        content: "";
+        position: absolute;
+        background-color: $colortwo;
+        color: $coloryellow;
+        border: 2px solid $coloryellow;
+        border-radius: 50px;
+        width: 170px ;
+        height: 50px;
+        transition: 0.3s ease-in-out all;
+        z-index: -1;
+        top: 3px;
+        left: 7px;
+    }
