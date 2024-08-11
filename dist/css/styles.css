@@ -96,13 +96,13 @@ ul {
   .home .home {
     height: 700px; }
     .home .home-slider {
-      height: 900px;
+      height: 700px;
       font-size: 18px;
       aspect-ratio: 9 / 16; }
       .home .home-slider-textOne {
         font-size: 25px;
         padding-top: 300px;
-        padding-right: 20px; }
+        padding-right: 30px; }
       .home .home-slider-navs {
         display: flex;
         flex-direction: column;
@@ -645,7 +645,9 @@ ul {
       top: 20px;
       padding-left: 10px; }
     .shop-area {
-      flex-direction: column; } }
+      flex-direction: column; }
+      .shop-area-left, .shop-area-right {
+        width: 100%; } }
 
 .footer {
   height: 1100px;
