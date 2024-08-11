@@ -121,7 +121,7 @@
           &-navs {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: end;
             justify-content: space-between;
             height: 70px;
             
@@ -129,7 +129,7 @@
               width: 50%;
 
               &-li {
-
+               padding-left: 4px;
                 
               }
             }
