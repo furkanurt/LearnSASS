@@ -50,19 +50,16 @@
         padding-left: 20px;
 
         &-h1 {
-            font-size: $msssfont;
+            font-size: $mssfont;
             padding-right: 0;
             padding-left: 10px;
         }
 
         &-links {
-            flex-direction: column;
-            display: none;
 
             &-link {
-                display: none;
-                font-size: $smallfont;
-                padding: 10px;
+                font-size: $mssssfont;
+                padding: 3px;
             }
         }
     }
