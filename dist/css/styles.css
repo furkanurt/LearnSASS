@@ -94,10 +94,42 @@ ul {
   .home-slider-container-4 {
     background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url("https://www.republicrecords.com/files/2023/08/AG-Banner-169.jpg"); }
 
+@media only screen and (max-width: 768px) {
+  .home-slider {
+    font-size: 25px;
+    aspect-ratio: 4 / 16; }
+    .home-slider-textOne {
+      font-size: 40px;
+      padding-top: 150px;
+      padding-right: 20px; }
+    .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {
+      font-size: 25px; }
+  .home-wrapper {
+    max-height: 700px; } }
+
 @media only screen and (max-width: 800px) {
-  .home {
-    color: white;
-    color: black; } }
+  .home-slider {
+    aspect-ratio: 8 / 12; }
+    .home-slider-textOne {
+      font-size: 90px;
+      padding-top: 200px;
+      padding-right: 30px; }
+    .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {
+      font-size: 40px; }
+  .home-wrapper {
+    max-height: 600px; } }
+
+@media only screen and (max-width: 1200px) {
+  .home-slider {
+    aspect-ratio: 8 / 16; }
+    .home-slider-textOne {
+      font-size: 123px;
+      padding-top: 265px;
+      padding-right: 40px; }
+    .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {
+      font-size: 90px; }
+  .home-wrapper {
+    max-height: 700px; } }
 
 .nav {
   background: transparent;
@@ -135,7 +167,7 @@ ul {
     margin: 0;
     color: white; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .nav {
     padding-right: 20px;
     padding-left: 20px; }
@@ -201,7 +233,7 @@ ul {
     padding-top: 4rem;
     padding-bottom: 0; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .artists-header-textone {
     font-size: 50px;
     top: 30px; }

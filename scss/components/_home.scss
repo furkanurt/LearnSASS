@@ -1,111 +1,181 @@
 .home {
-    &-set-height {
+  &-set-height {
       position: relative;
       height: 100px;
       width: 10px;
       top: 0;
-    }
-  
-    &-wrapper {
+  }
+
+  &-wrapper {
       position: relative;
       margin: auto 0;
       max-height: 700px;
-      overflow:hidden;
+      overflow: hidden;
       scroll-behavior: smooth;
-    }
-  
-    &-slider {
+  }
+
+  &-slider {
       display: flex;
       flex-direction: column;
       aspect-ratio: 8 / 16;
       overflow-y: auto;
       height: 100%;
       scroll-snap-type: y mandatory;
-       
 
       &-navs {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        width: 50%;
-
-        &-ul {
-          width: 20%;
           display: flex;
           flex-direction: row;
-          list-style: none;
-          justify-content: space-between;
-          align-items: flex-end;
-          padding-left: 10px;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50%;
 
+          &-ul {
+              width: 20%;
+              display: flex;
+              flex-direction: row;
+              list-style: none;
+              justify-content: space-between;
+              align-items: flex-end;
+              padding-left: 10px;
 
-        &-li {
-          display: block;
-          width: 22px;
-          height: 22px;
-          border: 1px solid $colorone ;
-          border-radius: 100%;
-          transition: 0.4s ease-in-out;
-        }
-        &-li:hover {
-          background-color: $colorone;
-          opacity: 0.9;
-        }
-          
-        }
+              &-li {
+                  display: block;
+                  width: 22px;
+                  height: 22px;
+                  border: 1px solid $colorone;
+                  border-radius: 100%;
+                  transition: 0.4s ease-in-out;
+              }
+
+              &-li:hover {
+                  background-color: $colorone;
+                  opacity: 0.9;
+              }
+          }
       }
-  
+
       &-textOne {
-        font-size: $xlargefont;
-        color: $colorone;
-        padding-top: 265px;
-        padding-bottom: 5px;
-        padding-right: 40px;
-        z-index: 4;
+          font-size: $xlargefont;
+          color: $colorone;
+          padding-top: 265px;
+          padding-bottom: 5px;
+          padding-right: 40px;
+          z-index: 4;
+      }
 
-      }
-      
-  
-      &-container-1, &-container-2 ,&-container-3, &-container-4 {
-        scroll-snap-align: start;
-        display: flex;
-        align-items: last baseline;
-        justify-content: center;
-        flex-direction: column;
-        object-fit: cover;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        overflow: hidden;
-        z-index: 1;
-  
-        &-textOne {
-          font-size: $largefont;
-        }
-      }
-      &-container-1 {
-        background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
-      }
-       &-container-2 {
-        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg');
-        }
-      
-
-       &-container-3 {
-        background-image:linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png');
-    
-      }
+      &-container-1,
+      &-container-2,
+      &-container-3,
       &-container-4 {
-        background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url('https://www.republicrecords.com/files/2023/08/AG-Banner-169.jpg');
+          scroll-snap-align: start;
+          display: flex;
+          align-items: last baseline;
+          justify-content: center;
+          flex-direction: column;
+          object-fit: cover;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          overflow: hidden;
+          z-index: 1;
+
+          &-textOne {
+              font-size: $largefont;
+          }
       }
-    }
-  
-    @include tablet {
-      color: $colorone;
-      color: black;
-    }
+
+      &-container-1 {
+          background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),
+              url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg");
+      }
+
+      &-container-2 {
+          background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),
+              url("https://www.republicrecords.com/files/2023/08/TS-Banner-169.jpg");
+      }
+
+      &-container-3 {
+          background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),
+              url("https://www.republicrecords.com/files/2024/07/PM-x-LC-Banner-169.png");
+      }
+
+      &-container-4 {
+          background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)),
+              url("https://www.republicrecords.com/files/2023/08/AG-Banner-169.jpg");
+      }
   }
 
-  
+  @include mobile {
+      &-slider {
+        font-size: $msfont;
+          aspect-ratio: 4 / 16; // Mobilde daha uygun aspect ratio
+          &-textOne {
+              font-size: $mediumfont; // Küçük ekranlar için font boyutu küçültüldü
+              padding-top: 150px;
+              padding-right: 20px;
+          }
+
+          &-container-1,
+          &-container-2,
+          &-container-3,
+          &-container-4 {
+              &-textOne {
+                  font-size: $mssfont; // Container içi başlıklar için font boyutu küçültüldü
+              }
+          }
+      }
+
+      &-wrapper {
+          max-height: 700px; // Mobilde slider yüksekliği ayarlandı
+      }
+  }
+
+  @include tablet {
+      &-slider {
+          aspect-ratio: 8 / 12; // Tabletlerde daha uygun aspect ratio
+          &-textOne {
+              font-size: $largefont; // Tabletler için font boyutu ayarlandı
+              padding-top: 200px;
+              padding-right: 30px;
+          }
+
+          &-container-1,
+          &-container-2,
+          &-container-3,
+          &-container-4 {
+              &-textOne {
+                  font-size: $mediumfont; // Container içi başlıklar için font boyutu ayarlandı
+              }
+          }
+      }
+
+      &-wrapper {
+          max-height: 600px; // Tabletlerde slider yüksekliği ayarlandı
+      }
+  }
+
+  @include desktop {
+      &-slider {
+          aspect-ratio: 8 / 16; // Desktop için orijinal aspect ratio
+          &-textOne {
+              font-size: $xlargefont; // Desktop için orijinal font boyutu
+              padding-top: 265px;
+              padding-right: 40px;
+          }
+
+          &-container-1,
+          &-container-2,
+          &-container-3,
+          &-container-4 {
+              &-textOne {
+                  font-size: $largefont; // Container içi başlıklar için orijinal font boyutu
+              }
+          }
+      }
+
+      &-wrapper {
+          max-height: 700px; // Desktop için orijinal slider yüksekliği
+      }
+  }
+}
