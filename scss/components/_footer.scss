@@ -8,7 +8,6 @@
     align-items: end;
     justify-content: end;
     z-index: 3;
-    
     bottom: 0%;
 
     &-top {
@@ -33,184 +32,214 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        
-           
         }
 
-    &-main {
-        margin-top: 90px;
-        width: 100%;
-        height: 520px;
-        z-index: 4;
-        display: flex;
-        position: relative;
-
-        &-right {
-            position: absolute,;
-            width: 85%;
-            right: 0%;
-            height: 100%;
+        &-main {
+            margin-top: 90px;
+            width: 100%;
+            height: 520px;
+            z-index: 4;
             display: flex;
-            flex-direction: row;
+            position: relative;
 
-
-            &-form {
-                width: 70%;
+            &-right {
+                position: absolute;
+                width: 85%;
+                right: 0%;
                 height: 100%;
-                padding: 10px;
                 display: flex;
-                flex-direction: column;
-                color: $colorone;
-                
+                flex-direction: row;
 
-
-                & > h1 {
-                    font-size: $mediumfont;
-                    width: 90%;
-                    letter-spacing: normal;
-                    padding-top: 10px;
-                    
-                }
-                
-                &-box {
+                &-form {
+                    width: 70%;
+                    height: 100%;
+                    padding: 10px;
                     display: flex;
-                    flex-direction: row;
-                    padding-top: 30px;
-                    padding-bottom: 20px;
+                    flex-direction: column;
+                    color: $colorone;
 
-
-                    &-right, &-left {
-                     
-                    padding-right: 20px;
-
-                    & > label {
-                        font-size: $msfont;
-                        color: $coloryellow;
-                    }
-                    
-                    & > input {
-
-                        width: 300px;
-                        height: 40px;
-                        background: transparent;
-                        border: 1px solid $coloryellow;
-                        border-radius: 5px;
-                        padding: 5px;
-                        color: white;
-                        position: relative;
-                        transition: 0.4s ease-in-out;
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            background: $coloryellow;
-                            height: 4px;
-                            width: 100%;
-                            bottom: 0;
-                            left: 0;
-                            z-index: 4;
-
-
-                        }
-
-                        &:hover {
-                            background: $coloryellow;
-                            color: $colortwo;
-                            border: 1px solid black;
-                        }
-                    }
-
-                    }
-                }
-
-                &-ckbx {
-                    padding-top: 15px;
-                    width: 170px;
-                    justify-content: space-between;
-                    color: $coloryellow;
-                    display: flex;
-                    flex-direction: row;
-
-
-                    &-checkbox {
+                    & > h1 {
+                        font-size: $mediumfont;
+                        width: 90%;
+                        letter-spacing: normal;
                         padding-top: 10px;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        width: 20px;
-                        height: 20px;
-                        background-color: transparent;
-                        border: 3px solid $coloryellow;
-                        border-radius: 3px;
-                        color: white;
-                        cursor: pointer;
-                    
-                        &:checked {
-                            background-color: $coloryellow;
-                            color: white;
+                    }
+
+                    &-box {
+                        display: flex;
+                        flex-direction: row;
+                        padding-top: 30px;
+                        padding-bottom: 20px;
+
+                        &-right, &-left {
+                            padding-right: 20px;
+
+                            & > label {
+                                font-size: $msfont;
+                                color: $coloryellow;
+                            }
+
+                            & > input {
+                                width: 300px;
+                                height: 40px;
+                                background: transparent;
+                                border: 1px solid $coloryellow;
+                                border-radius: 5px;
+                                padding: 5px;
+                                color: white;
+                                position: relative;
+                                transition: 0.4s ease-in-out;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    background: $coloryellow;
+                                    height: 4px;
+                                    width: 100%;
+                                    bottom: 0;
+                                    left: 0;
+                                    z-index: 4;
+                                }
+
+                                &:hover {
+                                    background: $coloryellow;
+                                    color: $colortwo;
+                                    border: 1px solid black;
+                                }
+                            }
                         }
-    
-                        
                     }
-                }
 
-
-                & > p {
-                    padding-top: 15px;
-                    padding-bottom: 40px;
-                    width: 90%;
-                }
-
-
-            }
-
-            &-2 {
-                width: 20%;
-                padding: 10px;
-                padding-top: 30px;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                
-
-
-                &-list {
-                    padding: 20px;
-                    font-size: $msssfont;
-
-                 &-white {
-                    color: white;
-                    font-size: $mssssfont;
-                    font-family:Arial, Helvetica, sans-serif;
-                    transition: 0.4s ease-in-out;
-                    padding-bottom: 10px;
-
-                    &:hover {
+                    &-ckbx {
+                        padding-top: 15px;
+                        width: 170px;
+                        justify-content: space-between;
                         color: $coloryellow;
+                        display: flex;
+                        flex-direction: row;
+
+                        &-checkbox {
+                            padding-top: 10px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            width: 20px;
+                            height: 20px;
+                            background-color: transparent;
+                            border: 3px solid $coloryellow;
+                            border-radius: 3px;
+                            color: white;
+                            cursor: pointer;
+
+                            &:checked {
+                                background-color: $coloryellow;
+                                color: white;
+                            }
+                        }
                     }
-                 }
+
+                    & > p {
+                        padding-top: 15px;
+                        padding-bottom: 40px;
+                        width: 90%;
+                    }
                 }
 
-                &-span {
-                    margin-top: 40px;
-                    margin-bottom: 20px;
-                    width: 80%;
-                    height: 0.7px;
-                    background-color: white;
-                    border-radius: 5px solid;
-                    z-index: 4;
+                &-2 {
+                    width: 20%;
+                    padding: 10px;
+                    padding-top: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
 
+                    &-list {
+                        padding: 20px;
+                        font-size: $msssfont;
+
+                        &-white {
+                            color: white;
+                            font-size: $mssssfont;
+                            font-family: Arial, Helvetica, sans-serif;
+                            transition: 0.4s ease-in-out;
+                            padding-bottom: 10px;
+
+                            &:hover {
+                                color: $coloryellow;
+                            }
+                        }
+                    }
+
+                    &-span {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                        width: 80%;
+                        height: 0.7px;
+                        background-color: white;
+                        border-radius: 5px solid;
+                        z-index: 4;
+                    }
                 }
-
-
             }
         }
-
-    }
-    
-
-
     }
 
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
 
+        &-area {
+            flex-direction: column;
+
+            &-main {
+                flex-direction: column;
+
+                &-right {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    &-form {
+                        width: 100%;
+                        
+                        &-box {
+                            flex-direction: column;
+                            padding: 20px 0;
+
+                            & > input {
+                                width: 100%;
+                                height: 30px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &-ckbx {
+                            flex-direction: row;
+                            padding-top: 10px;
+                            width: 100%;
+                        }
+                    }
+
+                    &-2 {
+                        width: 100%;
+                        align-items: center;
+
+                        &-list {
+                            font-size: $msssfont;
+                            padding: 10px 0;
+
+                            &-white {
+                                font-size: $msssfont;
+                            }
+                        }
+
+                        &-span {
+                            
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
