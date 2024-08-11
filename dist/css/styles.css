@@ -639,6 +639,13 @@ ul {
         display: flex;
         overflow: hidden;
         align-items: end; }
+  @media only screen and (max-width: 768px) {
+    .shop-header {
+      font-size: 18px;
+      top: 20px;
+      padding-left: 10px; }
+    .shop-area {
+      flex-direction: column; } }
 
 .footer {
   height: 1100px;

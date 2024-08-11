@@ -1,35 +1,34 @@
 .shop {
-width: 100%;
-height: 750px;
-z-index: 1;
-padding-top:10px;
-color: $colorone;
-
-
-&-header {
-   font-size: $xxlargefont;
-   bottom: 0;
-   position: relative;
-   top: 60px;
-   padding-left: 90px;
-   z-index: 4;
-}
-
- &-area {
    width: 100%;
-   height: 100%;
-   display: flex;
-   flex-direction: row;
-   margin: 0;
-    background: red;
-   
-   &-pic {
-      object-fit: cover;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-
-      &-shadow {
+   height: 750px;
+   z-index: 1;
+   padding-top: 10px;
+   color: $colorone;
+ 
+   &-header {
+     font-size: $xxlargefont;
+     bottom: 0;
+     position: relative;
+     top: 60px;
+     padding-left: 90px;
+     z-index: 4;
+   }
+ 
+   &-area {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     margin: 0;
+     background: red;
+ 
+     &-pic {
+       object-fit: cover;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+ 
+       &-shadow {
          position: absolute;
          padding: 14px;
          display: flex;
@@ -39,85 +38,92 @@ color: $colorone;
          left: 0;
          height: 100%;
          width: 100%;
-         z-index: 3 ;
+         z-index: 3;
          object-fit: cover;
          transition: 0.2s ease-in-out all;
          opacity: 0;
-
-      }
-      &-shadow:hover {
-         opacity: 1; 
+       }
+ 
+       &-shadow:hover {
+         opacity: 1;
          color: $coloryellow;
          background-color: rgba(31, 32, 23, 0.5);
-     }
-      
-      &-text {
+       }
+ 
+       &-text {
          padding: 20px;
          z-index: 2;
-
+ 
          & > h1 {
-            font-size: $mssfont;
+           font-size: $mssfont;
          }
-
+ 
          & > h2 {
-            font-size: $msssfont;
+           font-size: $msssfont;
          }
-      }
-      
-   }
-
-    &-left {
-   width: 50%;
-   height: 100%;
-   background-color: $mirandacolor;
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   overflow: hidden;
-   align-items: end;
-    
-   & > h1 {
-      position: relative;
-      font-size: $msfont;
-      padding: 20px
-   }
-
-    }
-
-   &-right {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      margin: 0%;
-
-      &-top {
+       }
+     }
+ 
+     &-left {
+       width: 50%;
+       height: 100%;
+       background-color: $mirandacolor;
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       overflow: hidden;
+       align-items: end;
+ 
+       & > h1 {
+         position: relative;
+         font-size: $msfont;
+         padding: 20px;
+       }
+     }
+ 
+     &-right {
+       width: 50%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       margin: 0%;
+ 
+       &-top {
          background-color: blue;
          width: 100%;
          height: 50%;
          display: flex;
          flex-direction: row;
-      } 
-   
-    &-bottom {
-      width: 100%;
-      height: 50%;
-      display: flex;
-      flex-direction: row;
-    }
-   
-   &-1 , &-2 {
-      width: 50%;
-      height: 100%;
-      position: relative;
-      display: flex;
-      overflow: hidden;
-       align-items: end;
+       }
+ 
+       &-bottom {
+         width: 100%;
+         height: 50%;
+         display: flex;
+         flex-direction: row;
+       }
+ 
+       &-1, &-2 {
+         width: 50%;
+         height: 100%;
+         position: relative;
+         display: flex;
+         overflow: hidden;
+         align-items: end;
+       }
+     }
    }
-
+ 
+   @include mobile {
+     &-header {
+       font-size: $msssfont; // Font boyutunu küçült
+       top: 20px; // Üstten kaymayı azalt
+       padding-left: 10px; // Sol kenardan padding'i azalt
+     }
+ 
+     &-area {
+       flex-direction: column; // İçeriği dikey hizala
+     }
    }
-
-
  }
-
-}
+ 
