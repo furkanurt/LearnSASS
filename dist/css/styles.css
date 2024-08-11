@@ -100,7 +100,7 @@ ul {
       aspect-ratio: 9 / 16; }
       .home .home-slider-textOne {
         font-size: 25px;
-        padding-top: 340px;
+        padding-top: 360px;
         padding-right: 20px; }
       .home .home-slider-navs {
         display: flex;
@@ -220,7 +220,7 @@ ul {
       padding: 16px; } }
 
 .nav.scrolled {
-  background-color: blue; }
+  background-color: black; }
 
 .artists {
   color: white;
@@ -793,7 +793,8 @@ ul {
       flex-direction: column;
       align-items: center; }
       .footer-area {
-        flex-direction: column; }
+        flex-direction: column;
+        height: 700px; }
         .footer-area-main {
           flex-direction: column; }
           .footer-area-main-right {

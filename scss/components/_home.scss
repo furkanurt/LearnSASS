@@ -115,7 +115,7 @@
           aspect-ratio: 9 / 16; // Mobilde daha uygun aspect ratio
           &-textOne {
               font-size: $mssfont; // Küçük ekranlar için font boyutu küçültüldü
-              padding-top: 340px;
+              padding-top: 360px;
               padding-right: 20px;
           }
           &-navs {
@@ -124,6 +124,7 @@
             align-items: center;
             justify-content: space-between;
             height: 70px;
+            
             
             &-ul {
               width: 55%;
