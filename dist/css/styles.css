@@ -792,9 +792,11 @@ ul {
     .footer {
       flex-direction: column;
       align-items: center; }
+      .footer-top {
+        height: 300px; }
       .footer-area {
         flex-direction: column;
-        height: 1000px; }
+        height: 1200px; }
         .footer-area-main {
           flex-direction: column; }
           .footer-area-main-right {
