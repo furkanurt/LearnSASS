@@ -144,7 +144,8 @@ ul {
       padding-right: 0;
       padding-left: 10px; }
     .nav-links {
-      flex-direction: column; }
+      flex-direction: column;
+      display: none; }
       .nav-links-link {
         display: none;
         font-size: 10px;
@@ -175,7 +176,7 @@ ul {
       padding: 16px; } }
 
 .nav.scrolled {
-  background-color: black; }
+  background-color: blue; }
 
 .artists {
   color: white;
@@ -199,6 +200,27 @@ ul {
     padding: 1rem;
     padding-top: 4rem;
     padding-bottom: 0; }
+
+@media only screen and (max-width: 400px) {
+  .artists-header-textone {
+    font-size: 50px;
+    top: 30px; }
+  .artists-bottom {
+    padding-top: 2rem; } }
+
+@media only screen and (max-width: 800px) {
+  .artists-header-textone {
+    font-size: 90px;
+    top: 40px; }
+  .artists-bottom {
+    padding-top: 3rem; } }
+
+@media only screen and (max-width: 1200px) {
+  .artists-header-textone {
+    font-size: 90px;
+    top: 50px; }
+  .artists-bottom {
+    padding-top: 4rem; } }
 
 .grid-template {
   display: grid;

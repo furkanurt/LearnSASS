@@ -57,6 +57,7 @@
 
         &-links {
             flex-direction: column;
+            display: none;
 
             &-link {
                 display: none;
@@ -108,5 +109,5 @@
 }
 
 .nav.scrolled {
-    background-color: black;
+    background-color: blue;
 }

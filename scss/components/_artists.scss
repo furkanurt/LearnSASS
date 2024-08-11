@@ -31,3 +31,47 @@
  }
 
 }
+@include mobile {
+  .artists {
+      &-header {
+          &-textone {
+              font-size: $lmmfont; // Küçük ekranlar için font boyutu küçültüldü
+              top: 30px; // Başlık konumu mobilde biraz daha aşağıya alınabilir
+          }
+      }
+
+      &-bottom {
+          padding-top: 2rem; // Mobilde padding değeri azaltıldı
+      }
+  }
+}
+
+@include tablet {
+  .artists {
+      &-header {
+          &-textone {
+              font-size: $largefont; // Orta ekranlar için font boyutu ayarlandı
+              top: 40px; // Başlık konumu ayarlandı
+          }
+      }
+
+      &-bottom {
+          padding-top: 3rem; // Tabletlerde padding değeri biraz azaltıldı
+      }
+  }
+}
+
+@include desktop {
+  .artists {
+      &-header {
+          &-textone {
+              font-size: $largefont; // Desktop için büyük font boyutu kullanıldı
+              top: 50px; // Desktop için başlık konumu korundu
+          }
+      }
+
+      &-bottom {
+          padding-top: 4rem; // Desktop için orijinal padding değeri korundu
+      }
+  }
+}
