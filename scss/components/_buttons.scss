@@ -135,3 +135,70 @@ z-index: unset;
             top: 3px;
             left: 7px;
         }
+        // Small screens (mobile)
+@include mobile {
+    .black-button,
+    .big-black-button,
+    .yellow-button {
+      font-size: $smallfont;
+      width: 100px;
+      height: 30px;
+      border-radius: 40px;
+    }
+  
+    .black-button::after,
+    .big-black-button::after,
+    .yellow-button::after {
+      width: 100px;
+      height: 30px;
+    }
+  }
+  
+  // Medium screens (tablet)
+  @include tablet {
+    .black-button,
+    .big-black-button,
+    .yellow-button {
+      font-size: $msssfont;
+      width: 120px;
+      height: 35px;
+      border-radius: 45px;
+    }
+  
+    .black-button::after,
+    .big-black-button::after,
+    .yellow-button::after {
+      width: 120px;
+      height: 35px;
+    }
+  }
+  
+  // Large screens (desktop)
+  @include desktop {
+    .black-button,
+    .big-black-button,
+    .yellow-button {
+      font-size: $msssfont;
+      width: 140px;
+      height: 40px;
+      border-radius: 50px;
+    }
+  
+    .big-black-button {
+      font-size: $msfont;
+      width: 170px;
+      height: 50px;
+    }
+  
+    .black-button::after,
+    .big-black-button::after,
+    .yellow-button::after {
+      width: 140px;
+      height: 40px;
+    }
+  
+    .big-black-button::after {
+      width: 170px;
+      height: 50px;
+    }
+  }

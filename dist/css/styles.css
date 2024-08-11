@@ -94,22 +94,32 @@ ul {
 
 @media only screen and (max-width: 768px) {
   .home .home {
-    height: 900px; }
+    height: 700px; }
     .home .home-slider {
       height: 900px;
       font-size: 18px;
       aspect-ratio: 9 / 16; }
       .home .home-slider-textOne {
-        font-size: 18px;
-        padding-top: 150px;
+        font-size: 25px;
+        padding-top: 300px;
         padding-right: 20px; }
+      .home .home-slider-navs {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 70px; }
+        .home .home-slider-navs-ul {
+          width: 50%; }
       .home .home-slider-container-1, .home .home-slider-container-2, .home .home-slider-container-3, .home .home-slider-container-4 {
-        min-height: 900px;
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
         object-fit: cover; }
         .home .home-slider-container-1-textOne, .home .home-slider-container-2-textOne, .home .home-slider-container-3-textOne, .home .home-slider-container-4-textOne {
           font-size: 18px !important; }
     .home .home-wrapper {
-      max-height: 900px; } }
+      max-height: 700px; } }
 
 @media only screen and (min-width: 800px) {
   .home-slider {
@@ -468,6 +478,55 @@ ul {
   z-index: -1;
   top: 3px;
   left: 7px; }
+
+@media only screen and (max-width: 768px) {
+  .black-button,
+  .big-black-button,
+  .yellow-button {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 40px; }
+  .black-button::after,
+  .big-black-button::after,
+  .yellow-button::after {
+    width: 100px;
+    height: 30px; } }
+
+@media only screen and (min-width: 800px) {
+  .black-button,
+  .big-black-button,
+  .yellow-button {
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    border-radius: 45px; }
+  .black-button::after,
+  .big-black-button::after,
+  .yellow-button::after {
+    width: 120px;
+    height: 35px; } }
+
+@media only screen and (min-width: 1200px) {
+  .black-button,
+  .big-black-button,
+  .yellow-button {
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px; }
+  .big-black-button {
+    font-size: 25px;
+    width: 170px;
+    height: 50px; }
+  .black-button::after,
+  .big-black-button::after,
+  .yellow-button::after {
+    width: 140px;
+    height: 40px; }
+  .big-black-button::after {
+    width: 170px;
+    height: 50px; } }
 
 .aı {
   animation: animate 1s ease-in-out; }

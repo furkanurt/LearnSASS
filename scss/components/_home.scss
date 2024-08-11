@@ -108,23 +108,42 @@
 
   @include mobile {
      .home {
-      height: 900px;
+      height: 700px;
 
       &-slider {
         height: 900px;
         font-size: $msssfont;
           aspect-ratio: 9 / 16; // Mobilde daha uygun aspect ratio
           &-textOne {
-              font-size: $msssfont; // Küçük ekranlar için font boyutu küçültüldü
-              padding-top: 150px;
+              font-size: $mssfont; // Küçük ekranlar için font boyutu küçültüldü
+              padding-top: 300px;
               padding-right: 20px;
+          }
+          &-navs {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            height: 70px;
+            
+            &-ul {
+              width: 50%;
+
+              &-li {
+
+                
+              }
+            }
+
           }
 
           &-container-1,
           &-container-2,
           &-container-3,
           &-container-4 {
-            min-height: 900px;
+            background-size: cover;
+            background-position: center; 
+            min-height: 700px;
             object-fit: cover;
               &-textOne {
                   font-size: $msssfont !important; // Container içi başlıklar için font boyutu küçültüldü
@@ -133,7 +152,7 @@
       }
 
       &-wrapper {
-          max-height: 900px; // Mobilde slider yüksekliği ayarlandı
+          max-height: 700px; // Mobilde slider yüksekliği ayarlandı
       }
   }
      }
