@@ -108,10 +108,9 @@
 
   @include mobile {
      .home {
-      height: 700px;
+      height: 680px;
 
       &-slider {
-        height: 700px;
         font-size: $msssfont;
           aspect-ratio: 9 / 16; // Mobilde daha uygun aspect ratio
           &-textOne {
@@ -143,7 +142,7 @@
           &-container-4 {
             background-size: cover;
             background-position: center; 
-            min-height: 700px;
+            min-height: 680px;
             object-fit: cover;
               &-textOne {
                   font-size: $msssfont !important; // Container içi başlıklar için font boyutu küçültüldü
@@ -152,7 +151,7 @@
       }
 
       &-wrapper {
-          max-height: 700px; // Mobilde slider yüksekliği ayarlandı
+          max-height: 680px; // Mobilde slider yüksekliği ayarlandı
       }
   }
      }

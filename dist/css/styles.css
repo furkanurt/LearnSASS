@@ -94,9 +94,8 @@ ul {
 
 @media only screen and (max-width: 768px) {
   .home .home {
-    height: 700px; }
+    height: 680px; }
     .home .home-slider {
-      height: 700px;
       font-size: 18px;
       aspect-ratio: 9 / 16; }
       .home .home-slider-textOne {
@@ -114,12 +113,12 @@ ul {
       .home .home-slider-container-1, .home .home-slider-container-2, .home .home-slider-container-3, .home .home-slider-container-4 {
         background-size: cover;
         background-position: center;
-        min-height: 700px;
+        min-height: 680px;
         object-fit: cover; }
         .home .home-slider-container-1-textOne, .home .home-slider-container-2-textOne, .home .home-slider-container-3-textOne, .home .home-slider-container-4-textOne {
           font-size: 18px !important; }
     .home .home-wrapper {
-      max-height: 700px; } }
+      max-height: 680px; } }
 
 @media only screen and (min-width: 800px) {
   .home-slider {
