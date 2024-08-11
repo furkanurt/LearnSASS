@@ -110,7 +110,7 @@ ul {
   padding-right: 234px;
   top: 0;
   z-index: 5;
-  margin: 0%;
+  margin: 0;
   width: 100%;
   transition: background-color 0.3s ease-in-out; }
   .nav-links {
@@ -128,12 +128,51 @@ ul {
     .nav-links-link:hover {
       color: white; }
   .nav-h1 {
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: normal;
     padding-right: 140px;
     padding-left: 25px;
     margin: 0;
     color: white; }
+
+@media only screen and (max-width: 400px) {
+  .nav {
+    padding-right: 20px;
+    padding-left: 20px; }
+    .nav-h1 {
+      font-size: 18px;
+      padding-right: 0;
+      padding-left: 10px; }
+    .nav-links {
+      flex-direction: column; }
+      .nav-links-link {
+        display: none;
+        font-size: 10px;
+        padding: 10px; } }
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    padding-right: 20px;
+    padding-left: 20px; }
+    .nav-h1 {
+      font-size: 25px;
+      padding-right: 50px;
+      padding-left: 15px; }
+    .nav-links-link {
+      font-size: 15px;
+      padding: 12px; } }
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    padding-right: 234px;
+    padding-left: 25px; }
+    .nav-h1 {
+      font-size: 25px;
+      padding-right: 140px;
+      padding-left: 25px; }
+    .nav-links-link {
+      font-size: 24px;
+      padding: 16px; } }
 
 .nav.scrolled {
   background-color: black; }
@@ -628,12 +667,12 @@ ul {
 
 .shopscroll {
   animation-name: scroll;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out; }
 
 @keyframes scroll {
   0% {
-    transform: translateY(100px);
+    transform: translateY(80px);
     opacity: 30%; }
   100% {
     transform: translateY(0px); } }

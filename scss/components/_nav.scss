@@ -9,7 +9,7 @@
     padding-right: 234px;
     top: 0;
     z-index: 5;
-    margin: 0%;
+    margin: 0;
     width: 100%;
     transition: background-color 0.3s ease-in-out;
 
@@ -20,23 +20,22 @@
         justify-content: center;
         list-style: none;
 
-     &-link {
-        color: $coloryellow;
-        text-decoration: none;
-        padding: 16px;
-        font-size: $navlink;
-        transition:color 0.4s ease-in-out;
-     }
+        &-link {
+            color: $coloryellow;
+            text-decoration: none;
+            padding: 16px;
+            font-size: $navlink;
+            transition: color 0.4s ease-in-out;
+        }
 
-     &-link:hover {
-        color: $colorone;
-     }
-     
-
+        &-link:hover {
+            color: $colorone;
+        }
     }
-    &-h1{
-        font-size: 35px;
-        letter-spacing:normal;
+
+    &-h1 {
+        font-size: $mediumfont;
+        letter-spacing: normal;
         padding-right: 140px;
         padding-left: 25px;
         margin: 0;
@@ -44,7 +43,70 @@
     }
 }
 
+// Responsive styles
+@include mobile {
+    .nav {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        &-h1 {
+            font-size: $msssfont;
+            padding-right: 0;
+            padding-left: 10px;
+        }
+
+        &-links {
+            flex-direction: column;
+
+            &-link {
+                display: none;
+                font-size: $smallfont;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .nav {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        &-h1 {
+            font-size: $mssfont;
+            padding-right: 50px;
+            padding-left: 15px;
+        }
+
+        &-links {
+            &-link {
+                font-size: $mssssfont;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .nav {
+        padding-right: 234px;
+        padding-left: 25px;
+
+        &-h1 {
+            font-size: $msfont;
+            padding-right: 140px;
+            padding-left: 25px;
+        }
+
+        &-links {
+            &-link {
+                font-size: $navlink;
+                padding: 16px;
+            }
+        }
+    }
+}
+
 .nav.scrolled {
     background-color: black;
 }
-
