@@ -56,10 +56,11 @@
         }
 
         &-links {
+            display: none;
 
             &-link {
-                font-size: $mssssfont;
-                padding: 3px;
+                display: none;
+                
             }
         }
     }
