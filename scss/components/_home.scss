@@ -17,7 +17,7 @@
   &-slider {
       display: flex;
       flex-direction: column;
-      aspect-ratio: 8 / 16;
+      aspect-ratio: 16 / 8;
       overflow-y: auto;
       height: 100%;
       scroll-snap-type: y mandatory;
@@ -81,7 +81,7 @@
           z-index: 1;
 
           &-textOne {
-              font-size: $largefont;
+              
           }
       }
 
@@ -107,11 +107,15 @@
   }
 
   @include mobile {
+     .home {
+      height: 900px;
+
       &-slider {
-        font-size: $msfont;
-          aspect-ratio: 16 / 8; // Mobilde daha uygun aspect ratio
+        height: 900px;
+        font-size: $msssfont;
+          aspect-ratio: 9 / 16; // Mobilde daha uygun aspect ratio
           &-textOne {
-              font-size: $mssfont; // Küçük ekranlar için font boyutu küçültüldü
+              font-size: $msssfont; // Küçük ekranlar için font boyutu küçültüldü
               padding-top: 150px;
               padding-right: 20px;
           }
@@ -120,16 +124,19 @@
           &-container-2,
           &-container-3,
           &-container-4 {
+            min-height: 900px;
+            object-fit: cover;
               &-textOne {
-                  font-size: $mssfont; // Container içi başlıklar için font boyutu küçültüldü
+                  font-size: $msssfont !important; // Container içi başlıklar için font boyutu küçültüldü
               }
           }
       }
 
       &-wrapper {
-          max-height: 700px; // Mobilde slider yüksekliği ayarlandı
+          max-height: 900px; // Mobilde slider yüksekliği ayarlandı
       }
   }
+     }
 
   @include tablet {
       &-slider {

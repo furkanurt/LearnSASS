@@ -35,7 +35,7 @@ ul {
 .home-slider {
   display: flex;
   flex-direction: column;
-  aspect-ratio: 8 / 16;
+  aspect-ratio: 16 / 8;
   overflow-y: auto;
   height: 100%;
   scroll-snap-type: y mandatory; }
@@ -83,8 +83,6 @@ ul {
     background-size: cover;
     overflow: hidden;
     z-index: 1; }
-    .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {
-      font-size: 90px; }
   .home-slider-container-1 {
     background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url("https://www.republicrecords.com/files/2024/06/The-Warning-Banner-169-1-1.jpg"); }
   .home-slider-container-2 {
@@ -95,19 +93,25 @@ ul {
     background-image: linear-gradient(115deg, rgba(42, 42, 46, 0.5), rgba(58, 58, 63, 0.3)), url("https://www.republicrecords.com/files/2023/08/AG-Banner-169.jpg"); }
 
 @media only screen and (max-width: 768px) {
-  .home-slider {
-    font-size: 25px;
-    aspect-ratio: 16 / 8; }
-    .home-slider-textOne {
-      font-size: 25px;
-      padding-top: 150px;
-      padding-right: 20px; }
-    .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {
-      font-size: 25px; }
-  .home-wrapper {
-    max-height: 700px; } }
+  .home .home {
+    height: 900px; }
+    .home .home-slider {
+      height: 900px;
+      font-size: 18px;
+      aspect-ratio: 9 / 16; }
+      .home .home-slider-textOne {
+        font-size: 18px;
+        padding-top: 150px;
+        padding-right: 20px; }
+      .home .home-slider-container-1, .home .home-slider-container-2, .home .home-slider-container-3, .home .home-slider-container-4 {
+        min-height: 900px;
+        object-fit: cover; }
+        .home .home-slider-container-1-textOne, .home .home-slider-container-2-textOne, .home .home-slider-container-3-textOne, .home .home-slider-container-4-textOne {
+          font-size: 18px !important; }
+    .home .home-wrapper {
+      max-height: 900px; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .home-slider {
     aspect-ratio: 8 / 12; }
     .home-slider-textOne {
@@ -119,7 +123,7 @@ ul {
   .home-wrapper {
     max-height: 600px; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .home-slider {
     aspect-ratio: 8 / 16; }
     .home-slider-textOne {
@@ -183,7 +187,7 @@ ul {
         font-size: 10px;
         padding: 10px; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .nav {
     padding-right: 20px;
     padding-left: 20px; }
@@ -195,12 +199,12 @@ ul {
       font-size: 15px;
       padding: 12px; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .nav {
     padding-right: 234px;
     padding-left: 25px; }
     .nav-h1 {
-      font-size: 25px;
+      font-size: 40px;
       padding-right: 140px;
       padding-left: 25px; }
     .nav-links-link {
@@ -240,14 +244,14 @@ ul {
   .artists-bottom {
     padding-top: 2rem; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .artists-header-textone {
     font-size: 90px;
     top: 40px; }
   .artists-bottom {
     padding-top: 3rem; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .artists-header-textone {
     font-size: 90px;
     top: 50px; }
