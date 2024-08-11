@@ -97,9 +97,9 @@ ul {
 @media only screen and (max-width: 768px) {
   .home-slider {
     font-size: 25px;
-    aspect-ratio: 4 / 16; }
+    aspect-ratio: 16 / 8; }
     .home-slider-textOne {
-      font-size: 40px;
+      font-size: 25px;
       padding-top: 150px;
       padding-right: 20px; }
     .home-slider-container-1-textOne, .home-slider-container-2-textOne, .home-slider-container-3-textOne, .home-slider-container-4-textOne {

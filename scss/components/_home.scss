@@ -109,9 +109,9 @@
   @include mobile {
       &-slider {
         font-size: $msfont;
-          aspect-ratio: 4 / 16; // Mobilde daha uygun aspect ratio
+          aspect-ratio: 16 / 8; // Mobilde daha uygun aspect ratio
           &-textOne {
-              font-size: $mediumfont; // Küçük ekranlar için font boyutu küçültüldü
+              font-size: $mssfont; // Küçük ekranlar için font boyutu küçültüldü
               padding-top: 150px;
               padding-right: 20px;
           }
