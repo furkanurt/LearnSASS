@@ -360,11 +360,9 @@ ul {
   100% {
     transform: translateY(0px); } }
 
-@media only screen and (max-width: 768px) {
-  -shadow:hover {
+@media (hover: none) and (pointer: coarse) {
+  .grid-template-box-shadow {
     opacity: 1;
-    display: block;
-    color: #fedb62;
     background-color: rgba(31, 32, 23, 0.5); } }
 
 .black-button {
@@ -803,16 +801,19 @@ ul {
         height: 300px; }
       .footer-area {
         flex-direction: column;
-        height: 1200px; }
+        height: 1200px;
+        align-items: center; }
         .footer-area-main {
           flex-direction: column;
-          height: 1200px; }
+          height: 1200px;
+          align-items: center; }
           .footer-area-main-right {
             flex-direction: column;
             align-items: center;
             justify-content: center; }
             .footer-area-main-right-form {
-              width: 100%; }
+              width: 100%;
+              align-items: center; }
               .footer-area-main-right-form-box {
                 flex-direction: column;
                 padding: 20px 0; }

@@ -58,3 +58,15 @@
 
     
 });
+const shadowElements = document.querySelectorAll('.grid-template-box-shadow');
+
+shadowElements.forEach((element) => {
+    element.addEventListener('touchstart', function() {
+        element.style.opacity = "1";
+        element.style.backgroundColor = "rgba(31, 32, 23, 0.5)";
+    });
+
+    element.addEventListener('touchend', function() {
+        element.style.opacity = "0";
+    });
+});

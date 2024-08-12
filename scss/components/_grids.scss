@@ -120,14 +120,11 @@
 }
 
 
-@include mobile {
-    &-shadow:hover {
+@media (hover: none) and (pointer: coarse) {
+    .grid-template-box-shadow {
         opacity: 1;
-        display: block; 
-        color: $coloryellow;
         background-color: rgba(31, 32, 23, 0.5);
     }
-
 }
 
 

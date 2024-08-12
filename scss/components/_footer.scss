@@ -194,10 +194,12 @@
         &-area {
             flex-direction: column;
             height: 1200px;
+            align-items: center;
 
             &-main {
                 flex-direction: column;
                 height: 1200px;
+                align-items: center;
 
                 &-right {
                     flex-direction: column;
@@ -206,6 +208,7 @@
                     
                     &-form {
                         width: 100%;
+                        align-items: center;
                         
                         &-box {
                             flex-direction: column;
