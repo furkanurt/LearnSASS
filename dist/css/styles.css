@@ -826,7 +826,8 @@ ul {
           .footer-area-main-right {
             flex-direction: column;
             align-items: center;
-            justify-content: center; }
+            justify-content: center;
+            right: unset; }
             .footer-area-main-right-form {
               width: 100%;
               align-items: center; }
