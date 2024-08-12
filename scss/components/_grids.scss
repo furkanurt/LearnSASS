@@ -120,11 +120,14 @@
 }
 
 
-@media (hover: none) and (pointer: coarse) {
-    .grid-template-box-shadow {
-        opacity: 1;
-        background-color: rgba(31, 32, 23, 0.5);
-    }
+.grid-template-box-shadow {
+    opacity: 0;
+    transition: 0.2s ease-in-out all;
+}
+
+.grid-template-box-shadow.hover-active {
+    opacity: 1;
+    background-color: rgba(31, 32, 23, 0.5);
 }
 
 
