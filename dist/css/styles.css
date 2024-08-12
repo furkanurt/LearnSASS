@@ -312,6 +312,12 @@ ul {
       display: block;
       color: #fedb62;
       background-color: rgba(31, 32, 23, 0.5); }
+    @media (hover: hover) {
+      .grid-template-box, .grid-template-box-2, .grid-template-box-3, .grid-template-box-4 {
+        opacity: 1;
+        display: block;
+        color: #fedb62;
+        background-color: rgba(31, 32, 23, 0.5); } }
   .grid-template .scrolled1 {
     animation-name: scroll;
     animation-duration: 0.8s;

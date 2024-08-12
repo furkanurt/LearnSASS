@@ -53,6 +53,13 @@
           color: $coloryellow;
           background-color: rgba(31, 32, 23, 0.5);
       }
+      @media (hover: hover) {
+        opacity: 1;
+          display: block; 
+          color: $coloryellow;
+          background-color: rgba(31, 32, 23, 0.5);
+
+      }
   }
 
   .scrolled1 {
