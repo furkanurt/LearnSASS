@@ -126,6 +126,20 @@
        &-left , &-right {
         width: 100%;
        }
+
+       &-pic {
+
+        &-text {
+          & > h1 {
+            font-size: $msssfont;
+          }
+  
+          & > h2 {
+            font-size: $mssssfont;
+          }
+
+        }
+       }
      }
 
      
