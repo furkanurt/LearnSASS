@@ -196,6 +196,17 @@
             height: 1200px;
             align-items: center;
 
+            &-pic {
+                position: absolute;
+                width: 100%;
+                height: 1200px;
+                object-fit: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
             &-main {
                 flex-direction: column;
                 height: 1000px;
@@ -209,6 +220,10 @@
                     &-form {
                         width: 100%;
                         align-items: center;
+
+                        & > h1 {
+                            font-size: $msfont;
+                        }
                         
                         &-box {
                             flex-direction: column;
@@ -235,6 +250,7 @@
                         &-list {
                             font-size: $msssfont;
                             padding: 10px 0;
+                            align-items: center;
 
                             &-white {
                                 font-size: $msssfont;
